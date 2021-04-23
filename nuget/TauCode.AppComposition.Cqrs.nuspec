@@ -13,7 +13,7 @@
       TauCode CQRS App Composition extensions.
     </description>
     <releaseNotes>
-      Initial version.
+      Initial release.
     </releaseNotes>
     <tags>taucode app cqrs</tags>
     <dependencies>
