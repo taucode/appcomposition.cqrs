@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31112.23
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{2A6BCA1D-44C6-4D49-A49B-9C7D92FC2F95}"
 	ProjectSection(SolutionItems) = preProject
@@ -24,9 +24,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EA3F4CAD-1DB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{21C182B4-B86A-4EB3-8184-EA52A336E660}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TauCode.AppComposition.Cqrs", "src\TauCode.AppComposition.Cqrs\TauCode.AppComposition.Cqrs.csproj", "{0159E058-EE25-445C-A357-45A716BDDBF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.AppComposition.Cqrs", "src\TauCode.AppComposition.Cqrs\TauCode.AppComposition.Cqrs.csproj", "{0159E058-EE25-445C-A357-45A716BDDBF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TauCode.AppComposition.Cqrs", "test\TauCode.AppComposition.Cqrs\TauCode.AppComposition.Cqrs.csproj", "{E82EC3E0-148C-483A-AC19-016310C95840}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TauCode.AppComposition.Cqrs.Tests", "test\TauCode.AppComposition.Cqrs.Tests\TauCode.AppComposition.Cqrs.Tests.csproj", "{F6AE86A7-1946-42B7-BD60-C51E8611E351}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,17 +38,17 @@ Global
 		{0159E058-EE25-445C-A357-45A716BDDBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0159E058-EE25-445C-A357-45A716BDDBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0159E058-EE25-445C-A357-45A716BDDBF4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E82EC3E0-148C-483A-AC19-016310C95840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E82EC3E0-148C-483A-AC19-016310C95840}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E82EC3E0-148C-483A-AC19-016310C95840}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E82EC3E0-148C-483A-AC19-016310C95840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6AE86A7-1946-42B7-BD60-C51E8611E351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6AE86A7-1946-42B7-BD60-C51E8611E351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6AE86A7-1946-42B7-BD60-C51E8611E351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6AE86A7-1946-42B7-BD60-C51E8611E351}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0159E058-EE25-445C-A357-45A716BDDBF4} = {EA3F4CAD-1DB0-4B44-AD78-8B655A3EACD3}
-		{E82EC3E0-148C-483A-AC19-016310C95840} = {21C182B4-B86A-4EB3-8184-EA52A336E660}
+		{F6AE86A7-1946-42B7-BD60-C51E8611E351} = {21C182B4-B86A-4EB3-8184-EA52A336E660}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {27AA19E6-5F5D-4B64-BE11-651EF042855F}
