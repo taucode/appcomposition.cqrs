@@ -1,12 +1,9 @@
 dotnet restore
 
-dotnet clean --configuration Debug
-dotnet clean --configuration Release
+dotnet build TauCode.AppComposition.Cqrs.sln -c Debug
+dotnet build TauCode.AppComposition.Cqrs.sln -c Release
 
-dotnet build --configuration Debug
-dotnet build --configuration Release
-
-dotnet test -c Debug .\test\TauCode.AppComposition.Cqrs.Tests\TauCode.AppComposition.Cqrs.Tests.csproj
-dotnet test -c Release .\test\TauCode.AppComposition.Cqrs.Tests\TauCode.AppComposition.Cqrs.Tests.csproj
+dotnet test TauCode.AppComposition.Cqrs.sln -c Debug
+dotnet test TauCode.AppComposition.Cqrs.sln -c Release
 
 nuget pack nuget\TauCode.AppComposition.Cqrs.nuspec
