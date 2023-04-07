@@ -51,6 +51,7 @@ public static class AppCompositionCqrsExtensions
         containerBuilder
             .RegisterAssemblyTypes(cqrsAssembly)
             .Where(t => t.IsClosedTypeOf(typeof(ICommandHandler<>)))
+            // todo: .Where(t => predicate(t)), so we can filter command handlers we'd like to 'map'. e.g. if some [2023-04-06] 'if some' what? looks like I haven't finished comment then
             .As(t => t.GetInterfaces()
                 .Where(x => x.IsClosedTypeOf(typeof(ICommandHandler<>)))
                 .Select(x => new KeyedService("commandHandler", x)))
