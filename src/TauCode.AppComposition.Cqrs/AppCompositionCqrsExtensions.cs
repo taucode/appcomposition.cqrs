@@ -2,13 +2,14 @@
 using Autofac.Core;
 using FluentValidation;
 using System.Reflection;
-using TauCode.Cqrs.Autofac;
 using TauCode.Cqrs.Commands;
 using TauCode.Cqrs.Queries;
 using TauCode.Cqrs.Validation;
 
 namespace TauCode.AppComposition.Cqrs;
 
+/*
+// todo
 public static class AppCompositionCqrsExtensions
 {
     public static ContainerBuilder AddCqrs(
@@ -51,6 +52,7 @@ public static class AppCompositionCqrsExtensions
         containerBuilder
             .RegisterAssemblyTypes(cqrsAssembly)
             .Where(t => t.IsClosedTypeOf(typeof(ICommandHandler<>)))
+            // todo: .Where(t => predicate(t)), so we can filter command handlers we'd like to 'map'. e.g. if some [2023-04-06] 'if some' what? looks like I haven't finished comment then
             .As(t => t.GetInterfaces()
                 .Where(x => x.IsClosedTypeOf(typeof(ICommandHandler<>)))
                 .Select(x => new KeyedService("commandHandler", x)))
@@ -107,3 +109,4 @@ public static class AppCompositionCqrsExtensions
         return containerBuilder;
     }
 }
+*/
