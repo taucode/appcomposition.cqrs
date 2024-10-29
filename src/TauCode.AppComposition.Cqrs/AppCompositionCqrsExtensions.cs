@@ -2,13 +2,14 @@
 using Autofac.Core;
 using FluentValidation;
 using System.Reflection;
-using TauCode.Cqrs.Autofac;
 using TauCode.Cqrs.Commands;
 using TauCode.Cqrs.Queries;
 using TauCode.Cqrs.Validation;
 
 namespace TauCode.AppComposition.Cqrs;
 
+/*
+// todo
 public static class AppCompositionCqrsExtensions
 {
     public static ContainerBuilder AddCqrs(
@@ -108,3 +109,4 @@ public static class AppCompositionCqrsExtensions
         return containerBuilder;
     }
 }
+*/
